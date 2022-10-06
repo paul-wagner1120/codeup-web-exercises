@@ -43,8 +43,9 @@ alert (paycheck);
 let confirmed3 = confirm('Scenario #3');
 console.log(confirmed3); // will be either true or false
 
-let classFull = confirm(`Is there room in the class and in your schedule?`);
-alert(`You can join the class: ${classFull}`);
+let classFull = confirm(`Is there room in the class? OK for Yes, Cancel for No`);
+let scheduleConflict = confirm('Are you available to take a class in the morning?');
+alert(`You can join the class: ${classFull && scheduleConflict}`);
 
 // 3.4
 
@@ -52,10 +53,8 @@ let confirmed4 = confirm('Scenario #4');
 console.log(confirmed4); // will be either true or false
 
 let premium = confirm(`Are you a premium member?`);
-alert(`You qualify for the product offer: ${premium}`);
-
 let itemsPurchased = confirm(`Are you buying more than 2 items and is the offer still valid?`);
-alert(`You qualify for the product offer: ${itemsPurchased}`);
+alert(`You qualify for the product offer: ${itemsPurchased || premium}`);
 
 
 
