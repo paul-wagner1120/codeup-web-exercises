@@ -15,9 +15,10 @@ console.log(confirmed); // will be either true or false
     let brotherB = prompt('How many days did you have Brother Bear');
     let hercules = prompt('How many days did you have Hercules');
     let pricePerDay = 3
+    alert("Rental Price is $3/day.")
     let total = (Number(littleMer) + Number(brotherB) + Number(hercules))* pricePerDay;
 
-    alert('Your total is ' + total);
+    alert('Your total is $' + total);
 
 let confirmed2 = confirm('Scenario #2');
 console.log(confirmed2); // will be either true or false
@@ -29,7 +30,7 @@ console.log(confirmed2); // will be either true or false
     let amazonHours = prompt('How many hours did you work for Amazon?');
     let fbHours = prompt('How many hours did you work for Facebook?');
 
-    let paycheck = ('Gross pay is ' + (Number(googleHours * googlePay) + (amazonHours * amazonPay) + (fbHours * fbPay)));
+    let paycheck = ('Gross pay is $' + (Number(googleHours * googlePay) + (amazonHours * amazonPay) + (fbHours * fbPay)));
 
 alert (paycheck);
 
