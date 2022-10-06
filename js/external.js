@@ -5,8 +5,8 @@ console.log('Hello from external JavaScript')
 alert("Welcome to my Website");
 
 let userInput = prompt('What is your favorite color?');
-console.log('Great, ' + userInput,'is my favorite color too!');
-alert("Great, " + userInput + ", is my favorite color too!")
+console.log('Great, ' + userInput, 'is my favorite color too!');
+alert("Great, " + userInput + " is my favorite color too!")
 
 let confirmed = confirm('Scenario #1');
 console.log(confirmed); // will be either true or false
