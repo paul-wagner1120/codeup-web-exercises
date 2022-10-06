@@ -4,10 +4,10 @@ console.log('Hello from external JavaScript')
 
 alert("Welcome to my Website");
 
-var userInput = prompt('What is your favorite color?');
+let userInput = prompt('What is your favorite color?');
 console.log('Great, ' + userInput,'is my favorite color too!');
 
-var confirmed = confirm('Scenario #1');
+let confirmed = confirm('Scenario #1');
 console.log(confirmed); // will be either true or false
 
     let littleMer = prompt('How many days did you have Little Mermaid');
@@ -18,8 +18,8 @@ console.log(confirmed); // will be either true or false
 
     alert('Your total is ' + total);
 
-var confirmed = confirm('Scenario #2');
-console.log(confirmed); // will be either true or false
+let confirmed2 = confirm('Scenario #2');
+console.log(confirmed2); // will be either true or false
 
     let googlePay = 400;
     let amazonPay = 380;
@@ -32,8 +32,14 @@ console.log(confirmed); // will be either true or false
 
 alert (paycheck);
 
+let confirmed3 = confirm('Scenario #3');
+console.log(confirmed3); // will be either true or false
+
 let classFull = confirm(`Is there room in the class and in your schedule?`);
 alert(`you can join the class: ${classFull}`);
+
+let confirmed4 = confirm('Scenario #4');
+console.log(confirmed4); // will be either true or false
 
 let premium = confirm(`Are you a premium member?`);
 alert(`You qualify for the product offer: ${premium}`);
