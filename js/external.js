@@ -5,8 +5,8 @@ console.log('Hello from external JavaScript')
 alert("Welcome to my Website");
 
 let userInput = prompt('What is your favorite color?');
-console.log('Great, ' + userInput, 'is my favorite color too!');
-alert("Great, " + userInput + " is my favorite color too!")
+
+    alert("Great, " + userInput + " is my favorite color too!")
 
 // 3.1
 
@@ -16,9 +16,8 @@ let scenario1 = confirm('Scenario #1');
     let brotherB = prompt('How many days did you have Brother Bear?');
     let hercules = prompt('How many days did you have Hercules?');
     let pricePerDay = 3
-    alert("Rental Price is $3/day.")
     let total = (Number(littleMer) + Number(brotherB) + Number(hercules))* pricePerDay;
-
+    alert("Rental Price is $3/day.")
     alert('Your total is $' + total + ".");
 
 // 3.2
@@ -34,7 +33,7 @@ let scenario2 = confirm('Scenario #2');
 
     let paycheck = ('Your gross pay is $' + (Number(googleHours * googlePay) + (amazonHours * amazonPay) + (fbHours * fbPay)) + ".");
 
-alert (paycheck);
+    alert (paycheck);
 
 // 3.3
 
