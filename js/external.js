@@ -8,6 +8,8 @@ let userInput = prompt('What is your favorite color?');
 console.log('Great, ' + userInput, 'is my favorite color too!');
 alert("Great, " + userInput + " is my favorite color too!")
 
+// 3.1
+
 let confirmed = confirm('Scenario #1');
 console.log(confirmed); // will be either true or false
 
@@ -19,6 +21,8 @@ console.log(confirmed); // will be either true or false
     let total = (Number(littleMer) + Number(brotherB) + Number(hercules))* pricePerDay;
 
     alert('Your total is $' + total);
+
+// 3.2
 
 let confirmed2 = confirm('Scenario #2');
 console.log(confirmed2); // will be either true or false
@@ -34,11 +38,15 @@ console.log(confirmed2); // will be either true or false
 
 alert (paycheck);
 
+// 3.3
+
 let confirmed3 = confirm('Scenario #3');
 console.log(confirmed3); // will be either true or false
 
 let classFull = confirm(`Is there room in the class and in your schedule?`);
 alert(`you can join the class: ${classFull}`);
+
+// 3.4
 
 let confirmed4 = confirm('Scenario #4');
 console.log(confirmed4); // will be either true or false
