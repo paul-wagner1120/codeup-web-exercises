@@ -10,8 +10,7 @@ alert("Great, " + userInput + " is my favorite color too!")
 
 // 3.1
 
-let confirmed = confirm('Scenario #1');
-console.log(confirmed); // will be either true or false
+let scenario1 = confirm('Scenario #1');
 
     let littleMer = prompt('How many days did you have Little Mermaid?');
     let brotherB = prompt('How many days did you have Brother Bear?');
@@ -24,8 +23,7 @@ console.log(confirmed); // will be either true or false
 
 // 3.2
 
-let confirmed2 = confirm('Scenario #2');
-console.log(confirmed2); // will be either true or false
+let scenario2 = confirm('Scenario #2');
 
     let googlePay = 400;
     let amazonPay = 380;
@@ -40,8 +38,7 @@ alert (paycheck);
 
 // 3.3
 
-let confirmed3 = confirm('Scenario #3');
-console.log(confirmed3); // will be either true or false
+let scenario3 = confirm('Scenario #3');
 
 let classFull = confirm(`Is there room in the class? OK for Yes, Cancel for No`);
 let scheduleConflict = confirm('Are you available to take a class in the morning?');
@@ -49,12 +46,12 @@ alert(`You can join the class: ${classFull && scheduleConflict}`);
 
 // 3.4
 
-let confirmed4 = confirm('Scenario #4');
-console.log(confirmed4); // will be either true or false
+let scenario4 = confirm('Scenario #4');
 
 let premium = confirm(`Are you a premium member?`);
-let itemsPurchased = confirm(`Are you buying more than 2 items and is the offer still valid?`);
-alert(`You qualify for the product offer: ${itemsPurchased || premium}`);
+let itemsPurchased = confirm(`Are you buying more than 2 items?`);
+let offerValid = confirm('Is the offer still valid?')
+alert(`You qualify for the product offer: ${itemsPurchased && offerValid || premium && offerValid}`);
 
 
 
