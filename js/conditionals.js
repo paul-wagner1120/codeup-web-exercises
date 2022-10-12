@@ -26,14 +26,20 @@
 
 // function analyzeColor(color) {
 //     if (color === "blue") {
-//         console.log("Blue is the color of the sky!");
+//            return "Blue is the color of the sky!";
 //     } else if (color === "red") {
-//         console.log("Strawberries are red!");
+//             return "Strawberries are red!";
 //     } else {
-//         console.log("Sorry, I don't know anything about " + color + "!");
+//             return "Sorry, I don't know anything about " + color + "!";
 //     }
 //
 // }
+//
+// console.log(analyzeColor('blue'));
+// console.log(analyzeColor('red'));
+// console.log(analyzeColor('green'));
+// console.log(analyzeColor('indigo'));
+
 
 
 // Don't change the next two lines!
