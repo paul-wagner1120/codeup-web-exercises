@@ -1,12 +1,14 @@
 "use strict";
+(function (){
+
 
 /* ########################################################################## */
 
 /**
- * TODO:
+ * TODOne:
  * Create a function named `analyzeColor` that accepts a string that is a color
  * name as input. This function should return a message which relates to the
- * color stated in the argument of the function. For colors you do not have
+ * color stated in the argument of the function. For colors, you do not have
  * responses written for, return a string stating so
  *
  * Example:
@@ -19,7 +21,7 @@
  * You should use an if-else-if-else block to return different messages.
  *
  * Test your function by passing various string literals to it and
- * console.logging the function's return value
+ * console. logging the function's return value
  */
 
 // function analyzeColor(color) {
@@ -42,7 +44,7 @@
 // let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 // let randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
- * TODO:
+ * TODOne:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
@@ -50,7 +52,7 @@
 // analyzeColor(randomColor);
 
 /**
- * TODO:
+ * TODOne:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 
@@ -70,7 +72,7 @@ function analyzeColor(color) {
 }
 
 /**
- * TODO:
+ * TODOne:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
@@ -83,7 +85,7 @@ alert(analyzeColor(userColor));
 /* ########################################################################## */
 
 /**
- * TODO:
+ * TODOne:
  * Suppose there's a promotion in Walmart, each customer is given a randomly
  * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
  * no discount, if your lucky number is 1 you'll get a 10% discount, if it's 2,
@@ -142,7 +144,7 @@ function calculateTotal(cartPrice, luckyNumber) {
 }
 
 /**
- * TODO:
+ * TODOne:
  * Uncomment the line below to generate a random number between 0 and 5.
  * (In this line of code, 0 is inclusive, and 6 is exclusive)
  * Prompt the user for their total bill, then use your `calculateTotal` function
@@ -162,7 +164,7 @@ alert("Your Lucky number is " + luckyNumber + ". Your total before discount is $
     // I was on the right path but just taking the much longer route. Cody stepped in and helped me condense it! Thanks a ton!
 
 /**
- * TODO:
+ * TODOne:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
  * number, then use 3 separate alerts to tell the user:
@@ -203,7 +205,7 @@ if (confirm("Would you like to enter a number?")) {
 
 }
 
-
+})();
 
 
 
