@@ -149,6 +149,10 @@ function calculateTotal(cartPrice, luckyNumber) {
     }
 }
 
+    console.log(calculateTotal(100, 0));
+    console.log(calculateTotal(100, 4));
+    console.log(calculateTotal(100, 5));
+
 /**
  * TODOne:
  * Uncomment the line below to generate a random number between 0 and 5.
