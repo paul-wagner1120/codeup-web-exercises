@@ -194,24 +194,33 @@ alert("Your Lucky number is " + luckyNumber + ". Your total before discount is $
 
 if (confirm("Would you like to enter a number?")) {
     let userNumber = parseFloat(prompt("Please enter a number"));
+    console.log(typeof userNumber);
 
-    function isEvenOrOdd(userNumber) {
-        if (userNumber % 2 === 0) {
-            return(userNumber + " is even!");
-        } else {
-            return(userNumber + " is odd!");
+    if (!isNaN(userNumber)) {
+
+        function isEvenOrOdd(userNumber) {
+            if (userNumber % 2 === 0) {
+                return (userNumber + " is even!");
+            } else {
+                return (userNumber + " is odd!");
+            }
         }
-    }
-    function isPosOrNeg(userNumber) {
-        if(userNumber >= 0) {
-            return(userNumber + " is positive!");
-        } else {
-            return (userNumber + " is negative!");
+
+        function isPosOrNeg(userNumber) {
+            if (userNumber >= 0) {
+                return (userNumber + " is positive!");
+            } else {
+                return (userNumber + " is negative!");
+            }
         }
+
+        alert(isEvenOrOdd(userNumber));
+        alert(userNumber + " + 100 = " + (userNumber + 100));
+        alert(isPosOrNeg(userNumber));
+
+    } else {
+        alert("You did not enter a valid input, please enter a number next time!");
     }
-    alert(isEvenOrOdd(userNumber));
-    alert(userNumber + " + 100 = " + (userNumber + 100));
-    alert(isPosOrNeg(userNumber));
 
 }
 
