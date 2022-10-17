@@ -65,16 +65,16 @@
     function first() {
         console.log(numbers[0]);
     }
-    first(numbers)
 
     function second() {
         console.log(numbers[1]);
     }
-    second(numbers)
 
-    function third() {
+    function last() {
         console.log(numbers[4]);
     }
-    third(numbers)
+    first(numbers)
+    second(numbers)
+    last(numbers)
 
 })();

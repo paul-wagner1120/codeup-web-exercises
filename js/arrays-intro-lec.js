@@ -26,7 +26,7 @@
         console.log("One of your instructors is named: " + instructors[i]);
     }
 
-    // for (let i = 0; i < instructors.length; i++) {
+    // for (let i = 0; i < instructors.length; i++) { //acending
     //     console.log("One of your instructors is named: " + instructors[i]);
     // }
 
