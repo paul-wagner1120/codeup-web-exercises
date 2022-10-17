@@ -7,7 +7,7 @@
      * 'names'.
      */
 
-    let names = ["Alex", "Brian", "Paul", "Steve"];
+    let names = ["Alex", "Brian", "Paul", "Christian"];
 
     /**
      * TODO:
@@ -35,7 +35,7 @@
      */
 
     for (let i = 0; i < names.length; i++) {
-        console.log("One of your instructors is named: " + names[i]);
+        console.log("For Loop - One Name in your array is " + names[i]);
     }
 
     /**
@@ -44,7 +44,7 @@
      */
 
     names.forEach(function (name) { // anonymous function
-        console.log("One of your instructors is named: " + name);
+        console.log("For Each - One name in your array is " + name);
     });
 
     /**
