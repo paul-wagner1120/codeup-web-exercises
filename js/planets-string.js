@@ -1,8 +1,8 @@
 (function(){
     "use strict";
 
-    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    var planetsArray;
+    let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+    let planetsArray;
 
     /**
      * TODO:
@@ -10,8 +10,9 @@
      * planetsArray.
      * console.log planetsArray to check your work
      */
-
-    // console.log(planetsArray);
+    console.log(planetsString);
+    planetsArray = planetsString.split('|');
+    console.log(planetsArray);
 
     /**
      * TODO:
@@ -23,5 +24,21 @@
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
+    let results = planetsArray.join(' <br> ');
+    console.log("Added br tags between each planet: " + results);
 
+    let finalList = "<ul>" + "<li>" + planetsArray.join("</li><li>") + "</li>" + "</ul>";
+    console.log("Here is an unordered list: " + finalList);
+
+
+// creating a HTML unordered list from an array. This includes adding the list into the HTML doc - reference from geeksforkeeks.org/how-to-creating-html-list-from-javascript-array/
+
+    //
+    // let list = document.getElementById("myList");
+    //
+    // planetsArray.forEach((item) => {
+    //     let li = document.createElement("li");
+    //     li.innerText = item;
+    //     list.appendChild(li);
+    // });
 })();
