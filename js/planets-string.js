@@ -33,12 +33,12 @@
 
 // creating a HTML unordered list from an array. This includes adding the list into the HTML doc - reference from geeksforkeeks.org/how-to-creating-html-list-from-javascript-array/
 
-    //
-    // let list = document.getElementById("myList");
-    //
-    // planetsArray.forEach((item) => {
-    //     let li = document.createElement("li");
-    //     li.innerText = item;
-    //     list.appendChild(li);
-    // });
+
+    let list = document.getElementById("myList");
+
+    planetsArray.forEach((item) => {
+        let li = document.createElement("li");
+        li.innerText = item;
+        list.appendChild(li);
+    });
 })();
