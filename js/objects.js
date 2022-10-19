@@ -75,51 +75,51 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-    let books = [
-        {
-            number: "1",
-            title: "The Art of War",
-            author: {
-                firstName: "Sun",
-                lastName: "Tzu"
-            }
-        },
-        {
-            number: "2",
-            title: "Into the Fire",
-            author: {
-                firstName: "Dakota",
-                lastName: "Meyer"
-            }
-        },
-        {
-            number: "3",
-            title: "Inside Delta Force",
-            author: {
-                firstName: "Eric",
-                lastName: "Haney"
-            }
-        },
-        {
-            number: "4",
-            title: "Harry Potter and the Goblet of Fire",
-            author: {
-                firstName: "J.K.",
-                lastName: "Rowling"
-            }
-        },
-        {
-            number: "5",
-            title: "The Lord of the Rings: The Return of the King",
-            author: {
-                firstName: "J.R.R.",
-                lastName: "Tolkien"
-            }
-        }
-    ];
-    console.log(books[0].title);
-    console.log(books[0].author.firstName);
-    console.log(books[0].author.lastName);
+    // let books = [
+    //     {
+    //         // number: "1",
+    //         title: "The Art of War",
+    //         author: {
+    //             firstName: "Sun",
+    //             lastName: "Tzu"
+    //         }
+    //     },
+    //     {
+    //         // number: "2",
+    //         title: "Into the Fire",
+    //         author: {
+    //             firstName: "Dakota",
+    //             lastName: "Meyer"
+    //         }
+    //     },
+    //     {
+    //         // number: "3",
+    //         title: "Inside Delta Force",
+    //         author: {
+    //             firstName: "Eric",
+    //             lastName: "Haney"
+    //         }
+    //     },
+    //     {
+    //         // number: "4",
+    //         title: "Harry Potter and the Goblet of Fire",
+    //         author: {
+    //             firstName: "J.K.",
+    //             lastName: "Rowling"
+    //         }
+    //     },
+    //     {
+    //         // number: "5",
+    //         title: "The Lord of the Rings: The Return of the King",
+    //         author: {
+    //             firstName: "J.R.R.",
+    //             lastName: "Tolkien"
+    //         }
+    //     }
+    // ];
+    // console.log(books[0].title);
+    // console.log(books[0].author.firstName);
+    // console.log(books[0].author.lastName);
 
     /**
      * TODO:
@@ -146,12 +146,12 @@
      *      ...
      */
 
-    books.forEach(function (book) {
-        console.log("Array Index # " + books.indexOf(book));
-        console.log("Book # " + book.number);
-        console.log(book.title);
-        console.log(book.author.firstName + " " + book.author.lastName)
-    });
+    // books.forEach(function (book) {
+    //     console.log("Array Index # " + books.indexOf(book));
+    //     // console.log("Book # " + book.number);
+    //     console.log(book.title);
+    //     console.log(book.author.firstName + " " + book.author.lastName)
+    // });
 
     /**
      * Bonus:
@@ -163,5 +163,16 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-
-})();
+// function createBook(title, author) {
+//     return {title: title, author: author}
+// }
+// console.log(createBook("The Hobbit", "Tolkien")[0]);
+//
+// let books = [
+//     createBook("Rest In Peace Harambe", "The World"),
+//     createBook("The Day I Learned How to Code", "Paul Wagner"),
+//     createBook("Harry Potter and the Goblet of Fire", "J.K. Rowling")
+// ]
+// console.log(books);
+//
+// })();
