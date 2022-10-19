@@ -1,4 +1,4 @@
-(function() {
+(function(){
     "use strict";
 
     /**
@@ -55,9 +55,9 @@
 
     shoppers.forEach(function(shopper) {
        if (shopper.amount < 200){
-           console.log("I am sorry, your total did not qualify you for a discount today. " + shopper.name + " owes $" + shopper.amount + ".");
+           console.log("I am sorry " + shopper.name + ", your total did not qualify you for a discount today. " + "Your total today is $" + shopper.amount + ".");
        } else {
-           console.log("Congratulations, you spent enough money today to earn a 12% discount!!!! Your total before discount is $" + shopper.amount +". Your total after discount is $" + (shopper.amount - (shopper.amount * .12)).toFixed(2));
+           console.log("Congratulations " + shopper.name + ", you spent enough money today to earn a 12% discount!!!! Your total before discount is $" + shopper.amount + " & your total after discount is $" + (shopper.amount - (shopper.amount * .12)).toFixed(2));
        }
     });
 
@@ -75,51 +75,53 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-    // let books = [
-    //     {
-    //         // number: "1",
-    //         title: "The Art of War",
-    //         author: {
-    //             firstName: "Sun",
-    //             lastName: "Tzu"
-    //         }
-    //     },
-    //     {
-    //         // number: "2",
-    //         title: "Into the Fire",
-    //         author: {
-    //             firstName: "Dakota",
-    //             lastName: "Meyer"
-    //         }
-    //     },
-    //     {
-    //         // number: "3",
-    //         title: "Inside Delta Force",
-    //         author: {
-    //             firstName: "Eric",
-    //             lastName: "Haney"
-    //         }
-    //     },
-    //     {
-    //         // number: "4",
-    //         title: "Harry Potter and the Goblet of Fire",
-    //         author: {
-    //             firstName: "J.K.",
-    //             lastName: "Rowling"
-    //         }
-    //     },
-    //     {
-    //         // number: "5",
-    //         title: "The Lord of the Rings: The Return of the King",
-    //         author: {
-    //             firstName: "J.R.R.",
-    //             lastName: "Tolkien"
-    //         }
-    //     }
-    // ];
-    // console.log(books[0].title);
-    // console.log(books[0].author.firstName);
-    // console.log(books[0].author.lastName);
+    let books = [
+        {
+            // number: "1",
+            title: "The Art of War",
+            author: {
+                firstName: "Sun",
+                lastName: "Tzu"
+            }
+        },
+        {
+            // number: "2",
+            title: "Into the Fire",
+            author: {
+                firstName: "Dakota",
+                lastName: "Meyer"
+            }
+        },
+        {
+            // number: "3",
+            title: "Inside Delta Force",
+            author: {
+                firstName: "Eric",
+                lastName: "Haney"
+            }
+        },
+        {
+            // number: "4",
+            title: "Harry Potter and the Goblet of Fire",
+            author: {
+                firstName: "J.K.",
+                lastName: "Rowling"
+            }
+        },
+        {
+            // number: "5",
+            title: "The Lord of the Rings: The Return of the King",
+            author: {
+                firstName: "J.R.R.",
+                lastName: "Tolkien"
+            }
+        }
+    ];
+    console.log(books[0])
+    console.log(books[0].title);
+    console.log(books[0].author.firstName);
+    console.log(books[0].author.lastName);
+
 
     /**
      * TODO:
@@ -146,12 +148,12 @@
      *      ...
      */
 
-    // books.forEach(function (book) {
-    //     console.log("Array Index # " + books.indexOf(book));
-    //     // console.log("Book # " + book.number);
-    //     console.log(book.title);
-    //     console.log(book.author.firstName + " " + book.author.lastName)
-    // });
+    books.forEach(function (book) {
+        console.log("Book # " + (books.indexOf(book) + 1));
+        // console.log("Book # " + book.number);
+        console.log(book.title);
+        console.log(book.author.firstName + " " + book.author.lastName)
+    });
 
     /**
      * Bonus:
@@ -163,6 +165,77 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+let libraryBooks = []
+let addBook = confirm("Would you like to add a book to the library today?");
+if (!addBook){
+    alert("Thank you for visiting the library today!");
+} else {
+    createBook();
+}
+function createBook(){
+    let book = {
+        title: prompt("Please enter the title of the book you wish to add to the library"),
+        author: prompt("Please enter the author of the new book you wish to add")
+        }
+    libraryBooks.push(book);
+    let keepGoing = confirm("Thanks for your submission! Do you have any other books you would like to add today?");
+        if (keepGoing){
+            createBook();
+        } else {
+            alert("Thanks! You have added " + libraryBooks.length + " books to the library today!");
+        }
+}
+
+function showBookInfo() {
+    let randomBook = Math.floor(Math.random() * libraryBooks.length)
+    alert("Here is a random book from the library! " + libraryBooks.title + "by: " + libraryBooks.author);
+}
+showBookInfo();
+// console.log(libraryBooks);
+
+
+
+    // books.forEach(function (book) {
+    //     console.log("Book # " + (books.indexOf(book) + 1));
+    //     // console.log("Book # " + book.number);
+    //     console.log(book.title);
+    //     console.log(book.author.firstName + " " + book.author.lastName)
+    // });
+
+
+
+
+
+
+
+
+
+
+
+
+// not my code -- using as reference from another student --
+//     let outBook = {};
+//     let userInput = prompt(`Please Enter book name / Authors first name/ last name. "please pay special attention to the "/" to separate your answers`);
+//     let split = userInput.split(`/`);
+//      console.log(split[0], split[1], split[2]);
+//     createBook(split);
+//     function createBook(array){
+//         let newBook = {};
+//         newBook.title = array[0];
+//         newBook.author = {firstName: array[1], lastName:array[2]};
+//         outBook = newBook;
+//     }
+//     function showBookInfo(book){
+//         console.log(`${book.title}
+// Title: ${book.title}
+// Author: ${book.author.firstName} ${book.author.lastName}`)
+//     }
+//     showBookInfo(outBook);
+//     // can not get a for loop to work on an object that doesn't have other nested
+
+
+
 // function createBook(title, author) {
 //     return {title: title, author: author}
 // }
