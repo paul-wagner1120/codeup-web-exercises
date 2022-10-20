@@ -12,7 +12,6 @@ let potatoes = {
     quantity: 2,
     price: "$7.89"
 };
-
-    console.log(getPrice(potatoes));;
+console.log(getPrice(potatoes));
 
 
