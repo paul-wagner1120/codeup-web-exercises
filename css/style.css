@@ -2,15 +2,20 @@
     color: dodgerblue;
     text-decoration: underline;
 }
-.fancy-header1 {
-    color: cyan;
-    text-decoration: underline;
+
+#fancy-header {
+    color: red;
 }
 
-.fancy-header2 {
-    color: darkcyan;
-    text-decoration: underline;
+p{
+    color: greenyellow;
 }
 
+li{
+    color: crimson;
+}
 
+.extra-large {
+    font-size: 200px;
+}
 

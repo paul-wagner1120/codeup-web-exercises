@@ -1,0 +1,8 @@
+p {color: red} /*example 1 - adds Element*/
+.test {color: green;} /*example 2 - adds CLASS*/
+#demo {color: blue;} /*example 3 - adds ID*/
+p1 {color: purple !important;} /*example 4 - !important forces priority*/
+/* example 5 is inline styling (lime) on the html doc */
+p.test {color: coral}
+
+/*all examples for demonstration were sourced from w3schools.com*/
