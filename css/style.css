@@ -1,5 +1,16 @@
 .fancy-header {
-    color: purple;
+    color: dodgerblue;
     text-decoration: underline;
 }
+.fancy-header1 {
+    color: cyan;
+    text-decoration: underline;
+}
+
+.fancy-header2 {
+    color: darkcyan;
+    text-decoration: underline;
+}
+
+
 
