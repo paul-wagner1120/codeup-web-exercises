@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <link rel="stylesheet" href="css/group.css">
-    </head>
-        <body>
-            <p>
-                "Cascading" refers to the rules that govern how selectors are prioritized to change a page's appearance. This is a very important feature, since a complex website can have thousands of CSS rules.
-            </p>
-            <p class="test">
-                "Cascading" refers to the rules that govern how selectors are prioritized to change a page's appearance. This is a very important feature, since a complex website can have thousands of CSS rules.
-            </p>
-            <p id="demo" class="test">
-                "Cascading" refers to the rules that govern how selectors are prioritized to change a page's appearance. This is a very important feature, since a complex website can have thousands of CSS rules.
-            </p>
-            <p1 id="demo" class="test" style="color: lime;">
-                "Cascading" refers to the rules that govern how selectors are prioritized to change a page's appearance. This is a very important feature, since a complex website can have thousands of CSS rules.
-            </p1>
-            <p id="demo" class="test" style="color: lime;">
-                "Cascading" refers to the rules that govern how selectors are prioritized to change a page's appearance. This is a very important feature, since a complex website can have thousands of CSS rules.
-            </p>
-            <p>
-                "Cascading" refers to the rules that govern how selectors are prioritized to change a page's appearance. This is a very important feature, since a complex website can have thousands of CSS rules.
-            </p>
-        </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+<h1 class="welcome">Topic: Specificity</h1>
+<h1 class="welcome" id="welcome-underline">SPECIFICITY</h1>
+<p>Hello World! Element type selectors have a weight of 1</p>
+<p class="specificity">Hello World! Class selectors have a weight of 10</p>
+<p class="specificity" id="higher-specificity">Hello World! ID selectors have a weight of 100</p>
+<p class="specificity" id="higher-specificity">Hello World! Weights are added together in CSS when multiple selectors are being referenced.</p>
+<p class="specificity" id="higher-specificity" style="color: green; text-decoration: none; font-size: 18px">Hello World! Inline styles have a weight of 1000!</p>
+</body>
 </html>
-<!--style="color: orange /*example 4(inline style);*/-->
-<!--all examples for demonstration were sourced from w3schools.com-->

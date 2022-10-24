@@ -1,8 +1,64 @@
-p {color: red} /*example 1 - adds Element*/
-.test {color: green;} /*example 2 - adds CLASS*/
-#demo {color: blue;} /*example 3 - adds ID*/
-p1 {color: purple !important;} /*example 4 - !important forces priority*/
-/* example 5 is inline styling (lime) on the html doc */
-p.test {color: coral}
+/*p {color: red} !*example 1 - adds Element*!*/
+/*.test {color: green;} !*example 2 - adds CLASS*!*/
+/*#demo {color: blue;} !*example 3 - adds ID*!*/
+/*p1 {color: purple !important;} !*example 4 - !important forces priority*!*/
+/*!* example 5 is inline styling (lime) on the html doc *!*/
+/*p.test {color: coral}*/
 
-/*all examples for demonstration were sourced from w3schools.com*/
+/*!*all examples for demonstration were sourced from w3schools.com*!*/
+
+
+/*Using the curriculum and above article as a reference,
+create examples to demo the specificity of the following
+in the correct order:*/
+
+/*classes*/
+/*elements*/
+/*ids*/
+/*!important*/
+/*order of CSS declarations*/
+/*inline styling*/
+/*selector combinations*/
+
+/*What does the "Cascading" mean in "Cascading Style Sheets"?*/
+/*Cascading means that more than one rule can apply to a particular HTML tag.
+There is a hierarchy to determining which styles from the rules get applied,
+where the most specific one for each style will be applied*/
+
+.welcome {
+    font-family: "Academy Engraved LET", sans-serif, Arial;
+    color: #CE5937;
+}
+
+#welcome-underline {
+    text-decoration: underline;
+}
+
+* { /*Weight Value: 0-0-0*/
+    color: darkgoldenrod;
+    font-family: "Academy Engraved LET", sans-serif, Arial;
+}
+
+p { /*Weight Value: 0-0-1*/
+    color: salmon;
+    font-size: 28px;
+}
+
+.specificity { /*Weight Value: 0-1-0*/
+    color: yellow;
+    font-size: 50px;
+}
+
+#higher-specificity { /*Weight Value: 1-0-0*/
+    color: blue;
+}
+
+p#higher-specificity { /*Weight Value: 1-0-1*/
+    color: rebeccapurple;
+    font-size: 14px;
+}
+
+p.specificity#higher-specificity { /*Weight Value: 1-1-1*/
+    color: cyan;
+    text-decoration: underline /*!important;*/;
+}
