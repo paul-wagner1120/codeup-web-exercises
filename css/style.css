@@ -8,14 +8,75 @@
 }
 
 p{
-    color: greenyellow;
+    color: darkorange;
 }
 
-li{
-    color: crimson;
+p.title {
+    text-align: center;
 }
 
-.extra-large {
-    font-size: 200px;
+/*Center the main heading*/
+h1.fancy-header#top {
+    text-align: center;
+}
+/*Add a style to change the color of the headers on your page and make them underlined.*/
+#headers h2{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+/*Add a style to change the background color of the page.*/
+
+/*Add a style to add a background image to your background. Search how to manipulate the position, sizing of this background image.*/
+
+/*Add a style to change the font for the entire page.*/
+body {
+    background-image:url(../img/wall.jpeg);
+    background-color: lightskyblue;
+    font-family: Chalkduster;
+}
+
+/*Add a style to change the list-style to something other than the default bullet.*/
+ul {
+    color: cyan;
+    list-style-type: circle;
+}
+
+ol {
+    color: cyan;
+    list-style-type: upper-roman;
+}
+
+th {
+    color: cornflowerblue;
+}
+
+td {
+    color: coral;
+}
+
+th, td {
+    padding: 15px;
+    font-size: x-large;
+}
+
+/*Add a style to alter the anchor tags and its different states. */
+
+a:link {
+    color:red;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color:hotpink;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color:deepskyblue;
+}
+
+/* active/selected link (:active) */
+a:active {
+    color:green;
 }
 
