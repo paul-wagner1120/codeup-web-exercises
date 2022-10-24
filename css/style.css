@@ -21,7 +21,7 @@ h1.fancy-header#top {
 }
 /*Add a style to change the color of the headers on your page and make them underlined.*/
 #headers h2{
-    color: cornflowerblue;
+    color: dodgerblue;
     text-decoration: underline;
 }
 /*Add a style to change the background color of the page.*/
@@ -47,7 +47,8 @@ ol {
 }
 
 th {
-    color: cornflowerblue;
+    color: lime;
+    text-decoration: underline;
 }
 
 td {
@@ -80,3 +81,47 @@ a:active {
     color:green;
 }
 
+/*image edits*/
+
+img {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+}
+
+.product {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.product {
+    text-align: center;
+}
+
+h2.fancy-header {
+    text-align: center;
+}
+
+td.bravo {
+    color: darkorange;
+}
+
+td.charlie{
+    color: firebrick;
+}
+
+td.delta {
+    color: deeppink;
+}
+
+p.tm {
+    float: right;
+}
+
+hr {
+    border: 1px solid orange;
+}
