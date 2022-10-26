@@ -4,4 +4,72 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
+    background-color: black;
 }
+
+.message {
+    border: 1px solid lightgrey;
+    width: 80%;
+    padding: 2px;
+    margin-left: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.message-info {
+    padding: 10px;
+    color: #291D88;
+    background-color: #CDDEFF;
+}
+
+.message-success {
+    padding: 10px;
+    color: #00622A;
+    background-color: #CFF3DA;
+}
+
+.message-warning {
+    padding: 10px;
+    color: #94831F;
+    background-color: #FCFBC9;
+}
+
+.message-error {
+    padding: 10px;
+    color: #821830;
+    background-color: #FAD3D7;
+}
+
+.message-info-button {
+    color: #291D88;
+    background-color: #CDDEFF;
+    border: 2px solid #291D88;
+    border-radius: 4px;
+    box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.25);
+}
+
+.message-success-button {
+    color: #00622A;
+    background-color: #CFF3DA;
+    border: 2px solid #00622A;
+    border-radius: 4px;
+    box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.25);
+}
+
+.message-warning-button {
+    color: #94831F;
+    background-color: #FCFBC9;
+    border: 2px solid #94831F;
+    border-radius: 4px;
+    box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.25);
+}
+
+.message-error-button {
+    color: #821830;
+    background-color: #FAD3D7;
+    border: 2px solid #821830;
+    border-radius: 4px;
+    box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.25);
+}
+

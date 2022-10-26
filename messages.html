@@ -7,17 +7,43 @@
 </head>
 <body>
     <div class="message message-info">
-        An informational message
+        <button class="message-info-button" onclick="alertInfo()">
+            Click Here for An Informational Message
+        </button>
     </div>
     <div class="message message-success">
-        A success message
+        <button class="message-success-button" onclick="alertSuccess()">
+            Click Here for A Success Message
+        </button>
     </div>
     <div class="message message-warning">
-        A warning message
+        <button class="message-warning-button" onclick="alertWarn()">
+            Click Here for A Warning Message
+        </button>
     </div>
     <div class="message message-error">
-        An error message
+        <button class="message-error-button" onclick="alertError()">
+            Click Here for An Error Message
+        </button>
     </div>
+        <script>
+            function alertInfo() {
+                let information = "An informational message brought to you by javascript";
+                alert(information);
+            }
+            function alertSuccess() {
+                let success = "A success message brought to you by javascript";
+                alert(success);
+            }
+            function alertWarn() {
+                let warning = "A warning message brought to you by javascript";
+                alert(warning);
+            }
+            function alertError() {
+                let error = "An error message brought to you by javascript";
+                alert(error);
+            }
+        </script>
 
 </body>
 </html>
