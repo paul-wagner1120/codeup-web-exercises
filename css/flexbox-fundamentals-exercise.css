@@ -31,28 +31,30 @@ h2, h3 {
     background: white;
     width: 400px;
     height: 800px;
-    padding: 2em 1em;
+    padding: 1em;
     margin: 0 auto;
     /* enter needed declarations here */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 section {
     /* enter needed declarations here */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /*flex-direction: row;*/     /*default for display:flex */
+    /*justify-content: space-between;*/ /*moved to nth of type 1*/
 }
 
 section:nth-of-type(1) {    /*lightgreen container*/
     height: 3em;
     background: lightgreen;
     /* enter needed declarations here */
+    justify-content: space-between;
     align-items: center;
 }
 section:nth-of-type(1) div:last-child {
+    align-self: flex-start;
     /* enter needed declarations here */
 }
 
@@ -63,13 +65,14 @@ section:nth-of-type(1) div:last-child {
 }
 
 .purple-box:nth-of-type(1) {
-    width: 50%;
-    flex-grow: 1;
+    /*width: 50%;*/
+    flex-grow: 2;
     /* enter needed declarations here */
 }
 
 .purple-box:nth-of-type(2) {
-    width: 30%;
+    flex-grow: 1;
+    /*width: 30%;*/
     /* enter needed declarations here */
 }
 
@@ -80,11 +83,13 @@ section:nth-of-type(1) div:last-child {
 }
 
 section:nth-of-type(3) {  /* orange circles */
-align-items: center;
+    /*justify-content: flex-end;*/
+    align-items: center;
     /* enter needed declarations here */
 }
 
 section:nth-of-type(3) h3 {
+    flex-grow: 1;
     /* enter needed declarations here */
 
 }
@@ -102,6 +107,7 @@ section:nth-of-type(3) h3 {
     width: 5em;
     background: brown;
     /* enter needed declarations here */
+    flex-grow: 1;
 }
 
 .large-brown-box:nth-of-type(2) {
@@ -110,6 +116,7 @@ section:nth-of-type(3) h3 {
 
 section:nth-of-type(5) { /* yellow boxes */
     /* enter needed declarations here */
+    justify-content: space-evenly;
 }
 
 .yellow-box {
@@ -122,12 +129,12 @@ section:nth-of-type(6) { /* orange container */
     background: coral;
     height: 14em;
     /* enter needed declarations here */
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    /*width: 100%;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
     justify-content: space-between;
     align-items: center;
-    align-content: space-evenly;
+    align-content: space-around;
     flex-wrap: wrap;
 
 }
