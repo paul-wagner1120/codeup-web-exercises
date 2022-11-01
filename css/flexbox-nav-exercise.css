@@ -59,13 +59,17 @@ div {
 
 section {
     width: 100%;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /*background: #ccc;*/
     height: 60vh;
     text-align: center;
     font-size: 22px;
     font-weight: 700;
     text-decoration: underline;
+    font-family: 'Work Sans', sans-serif;
+
 }
 
 .footer-distributed {
