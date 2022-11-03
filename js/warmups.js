@@ -116,3 +116,15 @@ function fizzBuzz() {
 }
 
 fizzBuzz();
+
+
+    // Write a function that takes in an array of objects and returns the average of the heightInMM properties from each object.
+ function getAvgHeight(arr) {
+     let totalHeight = 0;
+     for (let element of arr) {
+         totalHeight += element.heightInMM;
+     }
+     return(totalHeight/arr.length);
+ }
+
+    console.log(getAvgHeight(hamsters));
