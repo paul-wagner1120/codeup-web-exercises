@@ -29,6 +29,8 @@
 <button id="btn3">Add Color to List Items</button>
 <button id="btn4">Change 1st list item color</button>
 <button id="btn5">Mission Accomplished</button>
+
+
 <script>
     (function() {
         "use strict";
@@ -37,14 +39,17 @@
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
-        let listener = function (event){
+
+        function listener(){
             mainHeader.innerHTML = "JavaScript is Cool"
         }
 
+        // let listener = function (event){
+        //     mainHeader.innerHTML = "JavaScript is Cool"
+        // }
+
         let btn1 = document.getElementById('btn1');
         btn1.addEventListener('click', listener);
-
-
 
         // TODO: Uncomment the next line and get the sub header element by id
         let subHeader = document.getElementById('sub-header');
@@ -92,6 +97,7 @@
         }
         let btn5 = document.getElementById('btn5');
         btn5.addEventListener('click', listener5);
+
     })();
 </script>
 
