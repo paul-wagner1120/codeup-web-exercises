@@ -8,6 +8,3 @@ let alertH1 = $('h1').html();
     alert(alertH1);
 });
 
-
-// var contents = $('#codeup').html();
-// alert(contents);
