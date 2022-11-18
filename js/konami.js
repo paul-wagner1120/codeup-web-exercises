@@ -16,7 +16,7 @@ $(document).keyup(function(event){
         alert("Cheat Code Invalid, please try again!")
         cheatCode = [];
     } else if(cheatCode === konamiCode){
-        alert("Congrats! You now have 30 lives")
+        alert("Congrats! You now have blue 30 lives")
     }
 
 
