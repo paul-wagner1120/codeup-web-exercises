@@ -14,16 +14,16 @@ $(document).keyup(function(event){
 
     if (cheatCode.length === konamiCode.length && cheatCode.every((element, index) => element === konamiCode[index])) {
         alert("Congrats, You now have 30 lives");
+        cheatCode.length = 0;
     } else {
 
         for (let i = 0; i<cheatCode.length; i++) {
             if (cheatCode[i] !== konamiCode[i]){
                 alert("Invalid code, Please try again");
+                cheatCode.length = 0;
             }
         }
-
     }
-
 });
 
 
