@@ -2,11 +2,11 @@
 
 let cheatCode = [];
 let konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]
-$(document).keyup(function(event){
+$(document).keyup(function (event) {
     // console.log(event.keyCode);
     let keyPress;
 
-    if (typeof event !== 'undefined'){
+    if (typeof event !== 'undefined') {
         keyPress = event.keyCode;
         cheatCode.push(keyPress);
         console.log(cheatCode);
@@ -17,8 +17,8 @@ $(document).keyup(function(event){
         cheatCode.length = 0;
     } else {
 
-        for (let i = 0; i<cheatCode.length; i++) {
-            if (cheatCode[i] !== konamiCode[i]){
+        for (let i = 0; i < cheatCode.length; i++) {
+            if (cheatCode[i] !== konamiCode[i]) {
                 alert("Invalid code, Please try again");
                 cheatCode.length = 0;
             }
