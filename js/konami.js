@@ -12,14 +12,17 @@ $(document).keyup(function(event){
         console.log(cheatCode);
     }
 
-    if (cheatCode.length > 11){
-        alert("Cheat Code Invalid, please try again!")
-        cheatCode = [];
-    } else if(cheatCode === konamiCode){
-        alert("Congrats! You now have blue 30 lives")
+    if (cheatCode.length === konamiCode.length && cheatCode.every((element, index) => element === konamiCode[index])) {
+        alert("Congrats, You now have 30 lives");
+    } else {
+
+        for (let i = 0; i<cheatCode.length; i++) {
+            if (cheatCode[i] !== konamiCode[i]){
+                alert("Invalid code, Please try again");
+            }
+        }
+
     }
-
-
 
 });
 
