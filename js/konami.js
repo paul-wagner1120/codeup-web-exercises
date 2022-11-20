@@ -12,6 +12,9 @@ $(document).keyup(function (event) {
         console.log(cheatCode);
     }
 
+
+
+
     if (cheatCode.length === konamiCode.length && cheatCode.every((element, index) => element === konamiCode[index])) {
         alert("Congrats, You now have 30 lives");
         cheatCode.length = 0;
