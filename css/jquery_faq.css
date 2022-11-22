@@ -1,0 +1,12 @@
+.invisible{
+    visibility: hidden;
+}
+
+.highlighted{
+    background: #3B94D9;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
