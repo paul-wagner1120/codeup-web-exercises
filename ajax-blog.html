@@ -14,7 +14,10 @@
         "use strict";
         $.get('data/blog.json').done(function (data){
             console.log((data));
-            $('#posts').html();
+            for(let i=0; i<data.length; i++){
+                let blog=$('<h3>' + data[i].title + '</h3><p>' + data[i].content + '</p><p>' + data[i].categories + '</p><p>' + data[i].date + '</p>');
+                $('#posts').append(blog);
+            }
         })
 
       })();
