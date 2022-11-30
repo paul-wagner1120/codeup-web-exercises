@@ -2,3 +2,4 @@
 *.iml
 .DS_STORE
 lectures-and-practice-documents/*
+js/keys.js
