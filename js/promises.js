@@ -1,4 +1,6 @@
 (() => {
+
+
 "use strict";
 
 // got help with code structure from ralph in my breakout room.
@@ -10,6 +12,5 @@ const lastGitCommit = (username) => {
 };
 console.log(lastGitCommit('paul-wagner1120'));
 
-
-
 })();
+
